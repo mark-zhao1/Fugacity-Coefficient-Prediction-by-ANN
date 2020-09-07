@@ -2,7 +2,8 @@
 A Proxy Peng-Robinson EOS For Rapid Multiphase Flash
 ANN prediction of fugacity coefficient from {Am, Bm, Bi, sum_xjAij} attributes.
 
-Author: Mark Zhao
+Snapshot of private repository, work in progress.
+Author: Mark Zhao  
 Questions to: mark.zhao@utexas.edu
 
 # Data_generation generates training instances.  
