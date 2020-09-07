@@ -1,0 +1,4 @@
+So far, the only model parameters with an acceptable MAE is that of  𝑛𝐶4−𝑛𝐶10  binary mixture at constant  𝑃,𝑇 , with  𝑇>𝑇𝐶  such that a single EOS root is expected. The resulting smooth  𝑙𝑛𝜙  with respect to  𝐴𝑚,𝐵𝑚,𝐵𝑖,∑𝑥𝑗𝐴𝑖𝑗  may explain the exceptional good MAE below 0.001.
+
+Also, since only  𝑙𝑛𝜙𝑛𝐶4|𝑃,𝑇=𝑓(𝑥𝑛𝐶4)  was modelled, the variable  𝐵𝑖  was constant.
+1) Try using the binary mixture  𝑛𝐶4−𝑛𝐶10  in  𝑃,𝑇,𝑥⃗   corresponding to single EOS root.
