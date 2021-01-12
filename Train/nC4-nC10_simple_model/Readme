@@ -1,0 +1,7 @@
+This second model implementation must be faster than EOS
+
+Assume T constant, P and x changing
+
+Predictor features are P, x1, x2,..., x_nc
+
+Need to generate all possible mixtures subject to sum of x = 1

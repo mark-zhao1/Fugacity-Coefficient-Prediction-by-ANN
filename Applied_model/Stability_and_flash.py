@@ -708,12 +708,12 @@ class pr:
 
 if __name__ == "__main__":
     ########################################################################################
-    # INPUTS
-    T = 620  # [K] [620, 650]
-    P = 20.6  # [bar] [10, 30]
+    '''    # INPUTS
+    T = 525  # [K] [620, 650]
+    P = 50  # [bar] [10, 30]
 
     # nC4-C10
-    z = np.array([0.1, 0.9])
+    z = np.array([0.75, 0.25])
     w = np.array([0.193, 0.49])
     Pc = np.array([37.997, 21.1])  # [bar]
     Tc = np.array([425.2, 617.6])  # [K]
@@ -726,8 +726,9 @@ if __name__ == "__main__":
     SSmaxit = 500  # 1000000 # 1E6 might crash my computer.
     TolRR = 1E-10
     TolXz = 1E-8
-    itSSSAmax = 1E6
-    '''########################################################################################
+    itSSSAmax = 1E6'''
+
+########################################################################################
     # INPUTS
     T = 374.85    # [K] Table 4-2 Ashutosh, Jaubert 2002 Fluid 1
     P = 97       # [bar]
@@ -759,7 +760,7 @@ if __name__ == "__main__":
     TolRR = 1E-10
     TolXz = 1E-8
     itSSSAmax = 1E6
-'''
+
     # More global constants
     Tr = T / Tc
     Pr = P / Pc
@@ -774,7 +775,7 @@ if __name__ == "__main__":
     pr = pr()
 
     # Use Model?
-    pr.useModel = True
+    pr.useModel = False
 
     # Load models
     modelPath = [

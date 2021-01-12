@@ -33,7 +33,7 @@ def data_writer(datafilename, a_mix, b_mix, b_i, sum_xiAij, ln_phi_x):
 
 if __name__ == '__main__':
     filepath = r'E:\\Datasets\\'
-    datafilename = filepath +'nC10_data_nC4-nC10_T300-650_P5-400_x0-1_' + str(datetime.datetime.now().strftime("%Y%m%d-%H%M%S")) + '.csv'
+    datafilename = filepath +'nC10_data_nC4-nC10_T300-650_P5-100_x0-1_' + str(datetime.datetime.now().strftime("%Y%m%d-%H%M%S")) + '.csv'
 
     '''# INPUTS
     T = 650  # [K]
@@ -66,8 +66,8 @@ if __name__ == '__main__':
 
     # Gen for range of P, T, x
     P_min = 5 # [bar]
-    P_max = 400
-    num_P = 1000
+    P_max = 100
+    num_P = 320
 
     T_min = 300
     T_max = 650
@@ -81,7 +81,7 @@ if __name__ == '__main__':
 
     for itx,P in enumerate(np.linspace(P_min, P_max, num_P)):
         Pr = P / Pc
-        print('{} %'.format(itx/num_P))
+        print('{} %'.format(itx/num_P*100))
         for T in np.linspace(T_min, T_max, num_T):
             Tr = T / Tc
 
@@ -105,7 +105,7 @@ if __name__ == '__main__':
 
                 # If more than one root, get ln_phi and root which correspond to lowest Gibbs energy
                 if len(Z) > 1 and min(Z) > 0:
-                    print('2 positive real roots at P = {} bar, T = {} K.'.format(P,T))
+                    #print('2 positive real roots at P = {} bar, T = {} K.'.format(P,T))
                     continue
                 else:
                     Z = max(Z)

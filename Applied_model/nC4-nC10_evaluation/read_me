@@ -1,0 +1,25 @@
+Test ANN model for lnphi of nC4 and nC10
+
+Plot residual Gibbs energy of mixing using ANN and EOS, for a mixing line partially in 2-phase region.
+
+Use training data generated from data_gen_from_PTx.py located in Train/nC4-nC10 data gen from PTx larger/data_gen_from_PTx.py
+
+The training data spanned in P-T-x:
+
+    P_min = 5 # [bar]
+    P_max = 100
+    num_P = 320
+
+    T_min = 300
+    T_max = 650
+    num_T = 1000
+
+    x_nC4_min = 0
+    x_nC4_max = 1
+    num_x_nC4 = 100
+
+MAE was 0.001 for nC4, 0.002 for nC10.
+
+G_R plotted using code copied from nC4-nC10_Residual_Gibbs_applied.py located at Applied_model/nC4-nC10_Residual_Gibbs_applied.py
+
+Kept all files and dependencies inside the folder, except for the models.

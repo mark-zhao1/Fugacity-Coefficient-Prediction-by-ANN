@@ -6,13 +6,19 @@ Snapshot of private repository, work in progress.
 Author: Mark Zhao  
 Questions to: mark.zhao@utexas.edu
 
+# Summary Flowchart
+![plot](./project_flowchart.png)
+
 # Data_generation generates training instances.  
+    Develop flash simulator with Peng-Robinson EOS.
     Specify ranges of T, P, x space of training data.  
-    Stores in .csv, hdf5, or pickle format.  
+    Use LHS for representative sampling.
+    Store in .csv, hdf5, or pickle format.  
     
 # Domain_exploration visualizes the training data.  
     View discontinuous or non-smooth data.  
     Create and manipulate Pandas DataFrames for graphical visualization.
+    Perform dimensionality reduction (PCA, MDS). This is not recommended.
     Simple data preprocessing.  
     
 # Trains ANN models to predict fugacity coefficient from Am, Bm, Bi, sum_xjAij.  
