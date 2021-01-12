@@ -7,7 +7,7 @@ Author: Mark Zhao
 Questions to: mark.zhao@utexas.edu
 
 # Summary Flowchart
-![plot](./project_flowchart.png)
+![plot](https://github.com/mark-zhao1/Fugacity-Coefficient-Prediction-by-ANN/blob/master/Project_flowchart.png)
 
 # Data_generation generates training instances.  
     Develop flash simulator with Peng-Robinson EOS.
